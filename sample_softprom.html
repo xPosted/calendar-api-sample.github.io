@@ -11,7 +11,7 @@
     <button id="authorize_button" style="display: none;">Authorize</button>
     <button id="signout_button" style="display: none;">Sign Out</button>
 	<button id="list_upcoming" onclick="listUpcomingEvents();" style="display: none;">List Upcoming</button>
-	<button id="create_event" onclick="createEvent();" style="display: none;">Create Event</button>
+	<button id="create_event" onclick="createTestEvent();" style="display: none;">Create Event</button>
 
     <pre id="content" style="white-space: pre-wrap;"></pre>
 
@@ -140,7 +140,7 @@
         });
       }
 
-function createEvent() {
+function createTestEvent() {
 	var event = {
   'summary': 'Test header',
   'location': '800 Howard St., San Francisco, CA 94103',
