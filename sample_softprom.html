@@ -134,16 +134,16 @@
 
 function createEvent() {
 	var event = {
-  'summary': 'Заголовок ивента',
+  'summary': 'Test header',
   'location': '800 Howard St., San Francisco, CA 94103',
-  'description': 'Описание тестового ивента',
+  'description': 'TEST description',
   'start': {
     'dateTime': '2019-08-09T09:00:00-07:00',
     'timeZone': 'America/Los_Angeles'
   },
   'end': {
     'dateTime': '2019-08-09T17:00:00-07:00',
-    'timeZone': 'Europe/Kiev'
+    'timeZone': 'America/Los_Angeles'
   },
   'recurrence': [
     'RRULE:FREQ=DAILY;COUNT=2'
@@ -162,7 +162,7 @@ function createEvent() {
 };
 
 var request = gapi.client.calendar.events.insert({
-  'calendarId': 'onair@softprom.com',
+  'calendarId': 'softprom.com_0o08d1o6v7mef6lcvk421narck@group.calendar.google.com',
   'resource': event
 });
 
